@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="search">
+        <select id="type-input">
+            <option value="isbn">ISBN</option>
+            <option value="title">Title</option>
+        </select>
+        <input type="text" id="val-input" placeholder="data here">
+        <button id="btn">find book</button>
+    </div>
+    <div id="results"></div>
+
+    <script id="books-template" type="text/x-handlebars-template">
+        <p>Title: {{title}}</p>
+        <p>Author: {{author}}</p>
+        <p>ISBN: {{isbn}}</p>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

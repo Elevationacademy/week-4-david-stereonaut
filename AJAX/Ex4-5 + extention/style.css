@@ -1,0 +1,14 @@
+.result {
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    width: fit-content;
+    float: left;
+}
+
+h3 {
+    clear: left
+}
+
+.fav {
+    float: left;
+}
